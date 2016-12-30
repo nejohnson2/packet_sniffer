@@ -4,7 +4,7 @@ import time
 
 def db_setup():
     # If your CouchDB server is running elsewhere, set it up like this:
-    couch = couchdb.Server('http://172.22.72.28:5984/')
+    couch = couchdb.Server('http://<ip-address>:5984/')
     # select database
     db = couch['test']
     return db
